@@ -1,0 +1,161 @@
+<section >
+    <app-upper-head [title]="title" [brief]="brief"></app-upper-head>
+
+    <div class="cover" [class.active]="isActive()">
+        <form class="form pt" (ngSubmit)="onSubmit()">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <div class="fieldInput">
+                        <div class="label d-flex">
+                            <h5 [class.error]="selectedVin.length > 0 && selectedVin.length < 17">رقم الشاسيه الخاص بسيارتك
+                            </h5>
+                            @if(selectedVin.length > 0 && selectedVin.length < 17){ <i
+                                class="bi bi-exclamation-circle-fill text-danger z-3"></i>
+                                }
+                        </div>
+                        <div class="input position-relative d-flex justify-content-center align-items-center flex-column">
+                            <input class="box w-100" type="text"
+                                [class.error]="selectedVin.length > 0 && selectedVin.length < 17"
+                                [class.active]="selectedVin.length > 0" maxlength="17" (input)="onVin($event)"
+                                [placeholder]="selectedVinCarText">
+                            @if(selectedVin.length > 0 && selectedVin.length < 17){ <p class="alert alert-danger mt-3">يجب
+                                ان لا تقل قراءة الشاسيه عن 17 حرف ورقم</p>
+                                }
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+    
+                    <div class="fieldInput">
+    
+                        <h5>الفئه</h5>
+                        <div class="input">
+    
+                            <div class="box" (click)="isOpen('CatCar')" [class.active]="isShow =='CatCar'"
+                                [class.active2]="selectedCatCarText != 'اختر الفئه'">
+                                <i class="bi bi-tags field-icon"></i>
+                                <p class="m-0" [class.placeholderCustom]="selectedCatCarText == 'اختر الفئه'">
+                                    {{selectedCatCarText}}
+                                </p>
+                                <i class="bi bi-chevron-down chevron"></i>
+                                @if(isShow=='CatCar'){
+                                <div class="droplist">
+                                    <p (click)="selectedCatCar('Base')" (click)="isOpen('CatCar')">
+                                        Base
+                                    </p>
+                                    <p (click)="selectedCatCar('EX')" (click)="isOpen('CatCar')">
+                                        EX
+                                    </p>
+                                    <p (click)="selectedCatCar('LX')" (click)="isOpen('CatCar')">
+                                        LX
+                                    </p>
+                                    <p (click)="selectedCatCar('Limited')" (click)="isOpen('CatCar')">
+                                        Limited
+                                    </p>
+                                    <p (click)="selectedCatCar('Sport')" (click)="isOpen('CatCar')">
+                                        Sport
+                                    </p>
+                                    <p (click)="selectedCatCar('Touring')" (click)="isOpen('CatCar')">
+                                        Touring
+                                    </p>
+    
+                                </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+    
+                    <div class="fieldInput">
+    
+                        <h5>ناقل الحركة</h5>
+                        <div class="input">
+    
+                            <div class="box" (click)="isOpen('TransCar')" [class.active]="isShow =='TransCar'"
+                                [class.active2]="selectedTransCarText != 'اختر ناقل الحركة'">
+                                <i class="bi bi-gear field-icon"></i>
+                                <p class="m-0" [class.placeholderCustom]="selectedTransCarText == 'اختر ناقل الحركة'">
+                                    {{selectedTransCarText}}
+                                </p>
+                                <i class="bi bi-chevron-down chevron"></i>
+                                @if(isShow=='TransCar'){
+                                <div class="droplist">
+                                    <p (click)="selectedTransCar('Automatic')" (click)="isOpen('TransCar')">
+                                        Automatic
+                                    </p>
+                                    <p (click)="selectedTransCar( 'Manual' )" (click)="isOpen('TransCar')">
+                                        Manual
+                                    </p>
+                                </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <div class="fieldInput">
+                        <div class="label d-flex">
+                            <h5 [class.error]="selectedMileage > 0 && selectedMileage < 500 || selectedMileage > 300000">
+                                قراءة العداد</h5>
+                            @if(selectedMileage > 0 && selectedMileage < 500 || selectedMileage> 300000){ <i
+                                    class="bi bi-exclamation-circle-fill text-danger z-3"></i>
+                                }
+                        </div>
+                        <div class="input position-relative d-flex justify-content-center align-items-center flex-column">
+                            <input class="box w-100" type="text" maxlength="6" inputmode="numeric"
+                                [class.error]="selectedMileage > 0 && selectedMileage < 500 || selectedMileage > 300000"
+                                (input)="onMileage($event)" [placeholder]="selectedRateCarText">
+                            @if(selectedMileage > 0 && selectedMileage < 500 || selectedMileage> 300000){ <p
+                                    class="alert alert-danger mt-3 w-100"> يجب ان لا تقل قراءة العداد عن 500 ميل ولا تزيد عن
+                                    300,000 ميل</p>
+                                }
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  d-flex flex-row-reverse text-end pt-2 justify-content-between columnSubmit">
+    
+                    <button type="submit" class="btn-inquiry" id="inquiryBtn" [disabled]="!isFormValid"
+                        [class.disabled]="!isFormValid || hasErrors">
+                        <span class="btn-content">
+                            <i class="bi bi-search"></i>
+                            <span>استعلام</span>
+                        </span>
+                    </button>
+                    @if(hasErrors){
+                    <p>يرجى ملئ جميع البيانات</p>
+                    }
+    
+                </div>
+    
+    
+    
+    
+    
+    
+            </div>
+        </form>
+    </div>
+    @if (isLoading()) {
+    
+    <p class="alert alert-secondary mt-4 w-50 m-auto text-center">
+        جاري المعالجة، من فضلك انتظر...
+    </p>
+    
+    } @else if (errorFromApi()) {
+    
+    <p class="alert alert-danger mt-4 w-50 m-auto text-center">
+        حدث خطأ، يرجى المحاولة مرة أخرى.
+    </p>
+    
+    } @else if (carDetailsByVinTable()) {
+    
+    <div class="details">
+        <app-by-vine-details [carInfoFromObj]="carDetailsByVinTable()">
+        </app-by-vine-details>
+    </div>
+    
+    }
+</section>

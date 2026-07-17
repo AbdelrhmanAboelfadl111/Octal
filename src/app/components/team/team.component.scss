@@ -1,0 +1,438 @@
+@use "../../../styels/fonts" as *;
+@use "../../../styels/mixin" as *;
+@use "../../../styels/var" as *;
+
+$red-900: #6E0E1E;
+$red-800: #8F1224;
+$red-700: #C8102E;
+$red-600: #D42C40;
+$red-500: #E0616E;
+$red-100: #FBE2E5;
+$red-50: #FDF1F2;
+
+$gold: #C89B3C;
+$gold-dark: #A87F2A;
+$gold-100: #FBF3E1;
+
+$gray-50: #F4F6F9;
+$gray-100: #EDF1F5;
+$gray-200: #E2E8F0;
+$gray-400: #94A3B8;
+$gray-600: #5B6B7F;
+
+$ink: #152238;
+$white: #FFFFFF;
+
+$radius-sm: 10px;
+$radius-md: 16px;
+$radius-lg: 24px;
+$radius-xl: 28px;
+
+$shadow-sm: 0 2px 8px rgba(21, 34, 56, 0.06);
+$shadow-md: 0 12px 28px rgba(110, 14, 30, 0.10);
+$shadow-lg: 0 24px 60px rgba(110, 14, 30, 0.16);
+
+$ease: cubic-bezier(.4, 0, .2, 1);
+
+$font-display: 'Cairo', 'Tajawal', sans-serif;
+$font-body: 'Tajawal', 'Segoe UI', sans-serif;
+
+// Role accent palette — one distinct hue per discipline, all drawn from
+// the same brand family so the grid still reads as a single cohesive set
+$roles: (
+    frontend: (bg: $red-50, fg: $red-700, ring: $red-100),
+    data: (bg: $gold-100, fg: $gold-dark, ring: rgba($gold, .18)),
+    ml: (bg: #EFF1FB, fg: #4C4FA3, ring: #E1E4F7),
+    backend: (bg: #EAF6EF, fg: #1D8A4C, ring: #D6F0DF),
+);
+
+// ---- Mixins ----
+@mixin card-surface($radius: $radius-lg, $shadow: $shadow-md) {
+    background: $white;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    border: 1px solid $gray-100;
+}
+
+@mixin fade-up($duration: .7s, $delay: 0s) {
+    animation: fadeUp $duration $delay $ease both;
+}
+
+@mixin role-accent($role) {
+    $palette: map-get($roles, $role);
+    background: map-get($palette, bg);
+    color: map-get($palette, fg);
+}
+
+// ---- Reset ----
+* {
+    box-sizing: border-box;
+}
+
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid $gold;
+    outline-offset: 2px;
+    border-radius: 6px;
+}
+
+// ==========================================================================
+// HEADER
+// ==========================================================================
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: saturate(180%) blur(14px);
+    box-shadow: $shadow-sm;
+    border-bottom: 1px solid $gray-100;
+
+    .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 14px 0;
+    }
+}
+
+.brand-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: $ink;
+    flex-shrink: 0;
+
+    .brand-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.25;
+
+        strong {
+            font-family: $font-display;
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: $red-800;
+        }
+
+        small {
+            font-size: .68rem;
+            letter-spacing: .12em;
+            color: $gray-400;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.header-title {
+    text-align: center;
+    flex-grow: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    h1 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    p {
+        font-size: .78rem;
+        color: $gray-400;
+        margin: 0;
+    }
+}
+
+.status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: $red-50;
+    color: $red-700;
+    font-size: .78rem;
+    font-weight: 700;
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid $red-100;
+    flex-shrink: 0;
+
+    .status-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #22C55E;
+        animation: pulseDot 2.2s infinite;
+    }
+}
+#main-content{
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+// ==========================================================================
+// HERO
+// ==========================================================================
+.team-hero {
+    position: relative;
+    padding: 60px 0 56px;
+    background: linear-gradient(180deg, $red-50 0%, $white 70%);
+    text-align: center;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    .hero-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+    }
+
+    .blueprint-grid {
+        position: absolute;
+        inset: 0;
+        background-image:
+            linear-gradient($red-100 1px, transparent 1px),
+            linear-gradient(90deg, $red-100 1px, transparent 1px);
+        background-size: 42px 42px;
+        mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 30%, transparent 75%);
+        -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 30%, transparent 75%);
+        opacity: .7;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+        max-width: 760px;
+    }
+
+    .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: $red-100;
+        color: $red-700;
+        font-weight: 700;
+        font-size: .82rem;
+        padding: 7px 16px;
+        border-radius: 999px;
+        margin-bottom: 18px;
+    }
+
+    h2 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 800;
+        font-size: clamp(1.5rem, 3.2vw, 2.3rem);
+        color: $red-900;
+        line-height: 1.4;
+        margin: 0 0 14px;
+
+        span {
+            color: $gold-dark;
+        }
+    }
+
+    p {
+        color: $gray-600;
+        font-size: 1rem;
+        line-height: 1.9;
+        margin: 0;
+    }
+
+    @include fade-up;
+}
+
+// ==========================================================================
+// TEAM GRID
+// ==========================================================================
+.team-section {
+    padding: 50px;
+    height: 100%!important;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+a{
+    text-decoration: none;
+    .member-card {
+    @include card-surface;
+    padding: 26px 22px 24px;
+    text-align: center;
+    transition: transform .25s $ease, box-shadow .25s $ease, border-color .25s $ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    @include fade-up(.6s, .05s);
+    @include responsive(350){
+        min-height: 300px;
+    }
+    @include responsive(650){
+        min-height: 450px;
+    }
+    @include responsive(1050){
+        height: 400px!important;
+    }
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: $shadow-lg;
+        border-color: $red-100;
+    }
+
+    .member-card-top {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+
+    .member-avatar {
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $font-display;
+        font-weight: 800;
+        font-size: 1.4rem;
+        border: 3px solid $white;
+        box-shadow: $shadow-sm;
+
+        @each $role, $palette in $roles {
+            &[data-role="#{$role}"] {
+                @include role-accent($role);
+                box-shadow: 0 0 0 4px map-get($palette, ring), $shadow-sm;
+            }
+        }
+    }
+
+    .role-chip {
+        position: absolute;
+        bottom: -4px;
+        right: calc(50% - 44px);
+        width: 30px;
+        height: 30px;
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .85rem;
+        border: 2px solid $white;
+
+        @each $role, $palette in $roles {
+            &[data-role="#{$role}"] {
+                @include role-accent($role);
+            }
+        }
+    }
+
+    .member-name {
+        font-family: $font-display;
+        font-weight: 800;
+        font-size: 1.05rem;
+        color: $ink;
+        margin: 0 0 4px;
+    }
+
+    .member-title {
+        font-size: .8rem;
+        font-weight: 700;
+        color: $red-700;
+        margin: 0 0 12px;
+        letter-spacing: .2px;
+    }
+
+    .member-desc {
+        font-size: .82rem;
+        line-height: 1.75;
+        color: $gray-600;
+        margin: 0 0 16px;
+        min-height: 4.6em;
+    }
+
+    .member-tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+
+        span {
+            font-size: .68rem;
+            font-weight: 700;
+            color: $gray-600;
+            background: $gray-50;
+            border: 1px solid $gray-200;
+            padding: 4px 10px;
+            border-radius: 999px;
+        }
+    }
+}
+}
+
+// Stagger the card entrance slightly for a more polished feel
+@for $i from 1 through 4 {
+    .member-card:nth-child(#{$i}) {
+        animation-delay: #{$i * 0.08}s;
+    }
+}
+
+
+
+// ==========================================================================
+// ANIMATIONS
+// ==========================================================================
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseDot {
+    0% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, .55);
+    }
+
+    70% {
+        box-shadow: 0 0 0 7px rgba(34, 197, 94, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+    }
+}
+
+// ==========================================================================
+// RESPONSIVE
+// ==========================================================================
+@media (max-width: 991.98px) {
+    .team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767.98px) {
+    .d-none-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .member-card .member-desc {
+        min-height: 0;
+    }
+}

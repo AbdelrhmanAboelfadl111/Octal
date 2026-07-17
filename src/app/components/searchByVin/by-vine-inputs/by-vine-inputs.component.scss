@@ -1,0 +1,256 @@
+@use "../../../../styels/fonts" as *;
+@use "../../../../styels/mixin" as *;
+@use "../../../../styels/var" as *;
+
+
+section{
+    height: 100%;
+    
+    @include responsive(350){
+        padding: 40px 0px;
+    }
+    .alert-danger{
+        @include responsive(350){
+            width: 100%!important;
+        }
+        @include responsive(450){
+            width: 90%!important;
+        }
+        @include responsive(1050){
+            width: 100%!important;
+        }
+    }
+    .cover {
+        transform: translateY(80px);
+        opacity: 0;
+        transition: all 1s 0.5s;
+        &.active {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+            background-color: white;
+            padding: 30px 50px;
+            @include responsive(350) {
+                padding: 30px 15px;
+            }
+            @include responsive(450) {
+                padding: 30px;
+            }
+            border-radius: 20px;
+            margin-top: 50px;
+            -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+            -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+            box-shadow: 3px 3px 10px 3px #dddddd;
+    
+            .columnSubmit {
+                @include flexCenter();
+    
+                @include responsive(350) {
+                    flex-direction: column !important;
+                    gap: 10px;
+                }
+            }
+    
+            .form {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+                .fieldInput {
+                    .label {
+                        gap: 5px;
+    
+                        h5 {
+                            transition: all 0.2s ease;
+    
+                            @include responsive(450) {
+                                font-size: 17px;
+                            }
+                        }
+    
+                        h5.error {
+                            color: red !important;
+                        }
+                    }
+    
+                    h5 {
+                        font-family: 'Hacen';
+    
+                        @include responsive(450) {
+                            font-size: 17px;
+                        }
+                    }
+    
+                    .input {
+                        input.error {
+                            color: red !important;
+                            border-color: red !important;
+                        }
+    
+                        input.box:focus {
+                            border-color: rgb(127, 127, 127) !important;
+                            outline: none;
+                            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        }
+    
+                        input::placeholder {
+                            color: rgb(183, 183, 183);
+                        }
+    
+                        .box {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            gap: 10px;
+                            border: 1px solid rgb(220, 220, 220);
+                            border-radius: 5px;
+                            padding: 10px 10px;
+                            position: relative;
+                            transition: all 0.3s ease;
+                            cursor: pointer;
+    
+                            @include responsive(650) {
+                                font-size: 14px;
+                            }
+    
+                            @include responsive(850) {
+                                font-size: 16px;
+                            }
+    
+                            &.active {
+                                border-color: rgb(127, 127, 127);
+    
+                                .chevron {
+                                    color: var(--blue-700);
+                                    transform: rotate(180deg);
+                                }
+                            }
+    
+                            &.active2 {
+                                border-color: rgb(127, 127, 127);
+    
+                                .chevron {
+                                    color: var(--blue-700);
+                                }
+                            }
+    
+                            &:hover {
+                                border-color: rgb(127, 127, 127);
+    
+                                .chevron {
+                                    color: var(--blue-700);
+                                    transition: all 0.3s ease;
+                                }
+                            }
+    
+                            p.placeholderCustom {
+                                color: rgb(183, 183, 183);
+                            }
+    
+                            .chevron {
+                                position: absolute;
+                                left: 20px;
+                                color: gray;
+    
+                                @include responsive(650) {
+                                    left: 7px;
+                                }
+                            }
+    
+                            .field-icon {
+                                color: var(--blue-700);
+                            }
+    
+                            .droplist {
+                                position: absolute;
+                                left: 0;
+                                top: 100%;
+                                max-height: 270px;
+                                overflow: auto;
+                                background-color: white;
+                                width: 100%;
+                                margin-top: 10px;
+                                -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+                                -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+                                box-shadow: 3px 3px 10px 3px #dddddd;
+                                padding: 10px;
+                                border-radius: 5px;
+                                z-index: 50;
+    
+                                p {
+                                    margin-bottom: 10px;
+                                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                    padding-block: 5px;
+                                    padding-inline: 5px;
+                                    border-radius: 5px;
+                                    transition: all 0.3s ease;
+                                    font-weight: 400;
+    
+                                    &:hover {
+                                        background-color: var(--blue-500);
+                                        color: white;
+                                    }
+    
+                                    &.notAllowd {
+                                        background-color: var(--blue-900);
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .columnSubmit {
+                    .btn-inquiry {
+                        position: relative;
+                        border: none;
+                        background: linear-gradient(135deg, var(--blue-700), var(--blue-900));
+                        color: #fff;
+                        font-family: 'Hacen';
+                        font-weight: 700;
+                        font-size: 1.05rem;
+                        padding: 16px 56px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: transform .25s var(--ease), box-shadow .25s var(--ease), opacity .2s;
+                        overflow: hidden;
+                        min-width: 220px;
+    
+                        &.disabled {
+                            background: linear-gradient(135deg, gray, black);
+                            transform: scale(1) !important;
+                            box-shadow: none !important;
+    
+                        }
+    
+                        span {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                        }
+                    }
+    
+                    p {
+                        margin-bottom: 0;
+                        font-family: 'Hacen';
+                        font-size: 18px;
+                        background-color: var(--blue-600);
+                        color: white;
+                        width: fit-content;
+                        padding: 15px;
+                        border-radius: 3px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                    }
+    
+                    .btn-inquiry:hover {
+                        transform: translateY(-3px);
+                        box-shadow: 0 18px 34px rgba(0, 91, 172, .38);
+                    }
+    
+                }
+            }
+        }
+}

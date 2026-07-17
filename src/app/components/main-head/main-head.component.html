@@ -1,0 +1,388 @@
+<div class="cover py-5" [class.active]="isActive()">
+    <form class="form" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="inquiry-card-header">
+                <h3><i class="bi bi-clipboard2-data"></i> بيانات السيارة</h3>
+                <span class="badge-steps">9 حقول</span>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+
+                <div class="fieldInput">
+
+                    <h5>سنة الموديل</h5>
+                    <div class="input">
+
+                        <div class="box"    (click)="isOpen('year')" [class.active]="isShow =='year'" [class.active2]="selectedYearText != 'اختر سنة الموديل من فضلك'">
+                            <i class="bi bi-calendar3 field-icon"></i>
+                            <p class="m-0" [class.placeholderCustom]="selectedYearText == 'اختر سنة الموديل من فضلك' ">{{selectedYearText}}</p>
+                            <i class="bi bi-chevron-down chevron"></i>
+                            @if(isShow=='year'){
+                                <div class="droplist">
+                                    @for(year of years();track year){
+                                        <p (click)="selectedYear(year)" (click)="isOpen('year')">{{year}}</p>
+                                    }
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+
+                <div class="fieldInput">
+
+                    <h5>الماركة</h5>
+                    <div class="input">
+
+                        <div class="box"   (click)="isOpen('model')" [class.active]="isShow =='model'"  [class.active2]="selectedModelText != 'اختر الماركه من فضلك'">
+                            <i class="bi bi-award field-icon"></i>
+                            <p class="m-0" [class.placeholderCustom]="selectedModelText == 'اختر الماركه من فضلك'">
+                                {{selectedModelText}}
+                            </p>
+                            <i class="bi bi-chevron-down chevron"></i>
+                            @if(isShow=='model'){
+                            <div class="droplist">
+                                @for(brand of brands; track brand){
+                                
+                                <p (click)="selectedModel(brand)" (click)="isOpen('model')">
+                                    {{brand}}
+                                </p>
+                                
+                                }
+                                
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+
+                <div class="fieldInput">
+
+                    <h5>الموديل</h5>
+                    <div class="input">
+
+                        <div class="box "  [class.notAllowed]="!selectedBrand"  (click)="isOpen('modelCar')" [class.active]="isShow =='modelCar'" [class.active2]="selectedModelCarText != 'اختر الموديل من فضلك'">
+                            <i class="bi bi-car-front field-icon"></i>
+                            <p class="m-0" [class.placeholderCustom]="selectedModelCarText == 'اختر الموديل من فضلك'">
+                                {{selectedModelCarText}}
+                            </p>
+                            <i class="bi bi-chevron-down chevron"></i>
+                            @if(isShow=='modelCar'){
+                            <div class="droplist">
+                                @if(selectedBrand){
+                                    @for(model of models;track model){
+                                    
+                                    <p (click)="selectedModelCar(model)" (click)="isOpen('modelCar')">
+                                        {{model}}
+                                    </p>
+                                    
+                                    }
+                                }@else {
+                                    <p (click)="isOpen('modelCar')" class="notAllowd">
+                                        يجب اختيار الماركة 
+                                    </p>
+                                }
+                                
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+
+                <div class="fieldInput">
+
+                    <h5>الفئه</h5>
+                    <div class="input">
+
+                        <div class="box"   (click)="isOpen('CatCar')" [class.active]="isShow =='CatCar'"
+                            [class.active2]="selectedCatCarText != 'اختر الفئه من فضلك'">
+                            <i class="bi bi-tags field-icon"></i>
+                            <p class="m-0" [class.placeholderCustom]="selectedCatCarText == 'اختر الفئه من فضلك'">
+                                {{selectedCatCarText}}
+                            </p>
+                            <i class="bi bi-chevron-down chevron"></i>
+                            @if(isShow=='CatCar'){
+                            <div class="droplist">
+
+                                @if(selectedModelName){
+                                    @for(trim of trims;track trim){
+                                    
+                                    <p (click)="selectedCatCar(trim)" (click)="isOpen('CatCar')">
+                                        {{trim}}
+                                    </p>
+                                    
+                                    }
+                                }@else {
+                                    <p  (click)="isOpen('CatCar')" class="notAllowd">
+                                        يجب اختيار الموديل 
+                                    </p>
+                                }
+
+                               
+                                
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+
+                <div class="fieldInput">
+
+                    <h5>نوع الهيكل</h5>
+                    <div class="input">
+
+                        <div class="box"  (click)="isOpen('BodyCar')" [class.active]="isShow =='BodyCar'"
+                            [class.active2]="selectedBodyCarText != 'اختر نوع الهيكل من فضلك'">
+                            <i class="bi bi-grid-3x3-gap field-icon"></i>
+                            <p class="m-0" [class.placeholderCustom]="selectedBodyCarText == 'اختر نوع الهيكل من فضلك'">
+                                {{selectedBodyCarText}}
+                            </p>
+                            <i class="bi bi-chevron-down chevron"></i>
+                            @if(isShow=='BodyCar'){
+                            <div class="droplist">
+
+                                @if(selectedModelName){
+                                    @for(body of bodyTypes;track body){
+                                    
+                                    <p (click)="selectedBodyCar(body)" (click)="isOpen('BodyCar')">
+                                        {{body}}
+                                    </p>
+                                    
+                                    }
+                                }@else {
+                                    <p (click)="isOpen('BodyCar')" class="notAllowd">
+                                        يجب اختيار الموديل
+                                    </p>
+                                }
+
+                                
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+
+                <div class="fieldInput">
+
+                    <h5>سعة المحرك</h5>
+                    <div class="input">
+
+                        <div class="box"  (click)="isOpen('EngCar')" [class.active]="isShow =='EngCar'"
+                            [class.active2]="selectedEngCarText != 'اختر سعة المحرك من فضلك'">
+                            <i class="bi bi-speedometer2 field-icon"></i>
+                            <p class="m-0" [class.placeholderCustom]="selectedEngCarText == 'اختر سعة المحرك من فضلك'">
+                                {{selectedEngCarText}}
+                            </p>
+                            <i class="bi bi-chevron-down chevron"></i>
+                            @if(isShow=='EngCar'){
+                            <div class="droplist">
+
+                                @if(selectedModelName){
+                                    @for(engine of engines;track engine){
+                                    
+                                    <p (click)="selectedEngCar(engine)" (click)="isOpen('EngCar')">
+                                        {{engine}}
+                                    </p>
+                                    
+                                    }
+                                }@else {
+                                    <p (click)="isOpen('EngCar')" class="notAllowd">
+                                        يجب اختيار الموديل
+                                    </p>
+                                }
+                                
+                               
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+
+                <div class="fieldInput">
+
+                    <h5>ناقل الحركة</h5>
+                    <div class="input">
+
+                        <div class="box"  (click)="isOpen('TransCar')" [class.active]="isShow =='TransCar'"
+                            [class.active2]="selectedTransCarText != 'اختر ناقل الحركة من فضلك'">
+                            <i class="bi bi-gear field-icon"></i>
+                            <p class="m-0" [class.placeholderCustom]="selectedTransCarText == 'اختر ناقل الحركة من فضلك'">
+                                {{selectedTransCarText}}
+                            </p>
+                            <i class="bi bi-chevron-down chevron"></i>
+                            @if(isShow=='TransCar'){
+                            <div class="droplist">
+
+                                @if(selectedModelName){
+                                    @for(trans of transmissions;track trans){
+                                    
+                                    <p (click)="selectedTransCar(trans)" (click)="isOpen('TransCar')">
+                                        {{trans}}
+                                    </p>
+                                    
+                                    }
+                                }@else {
+                                    <p (click)="isOpen('TransCar')" class="notAllowd">
+                                        يجب اختيار الموديل
+                                    </p>
+                                }
+
+                               
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+
+                <div class="fieldInput">
+
+                    <h5>نوع الوقود</h5>
+                    <div class="input">
+
+                        <div class="box"  (click)="isOpen('fulleCar')" [class.active]="isShow =='fulleCar'"
+                            [class.active2]="selectedFulleCarText != 'اختر نوع الوقود من فضلك'">
+                            <i class="bi bi-fuel-pump field-icon"></i>
+                            <p class="m-0" [class.placeholderCustom]="selectedFulleCarText == 'اختر نوع الوقود من فضلك'">
+                                {{selectedFulleCarText}}
+                            </p>
+                            <i class="bi bi-chevron-down chevron"></i>
+                            @if(isShow=='fulleCar'){
+                            <div class="droplist">
+                                @if(selectedModelName){
+                                    @for(fuel of fuelTypes;track fuel){
+                                    
+                                    <p (click)="selectedFulleCar(fuel)" (click)="isOpen('fulleCar')">
+                                        {{fuel}}
+                                    </p>
+                                    
+                                    }
+                                }@else {
+                                    <p (click)="isOpen('fulleCar')" class="notAllowd">
+                                        يجب اختيار الموديل
+                                    </p>
+                                }
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+
+                <div class="fieldInput">
+
+                    <h5>نظام الدفع</h5>
+                    <div class="input">
+
+                        <div class="box"  (click)="isOpen('drivetrains')" [class.active]="isShow =='drivetrains'"
+                            [class.active2]="selectedDrivetrainsText != 'اختر نظام الدفع من فضلك'">
+                            <i class="bi bi-speedometer2 field-icon"></i>
+                            <p class="m-0" [class.placeholderCustom]="selectedDrivetrainsText == 'اختر نظام الدفع من فضلك'">
+                                {{selectedDrivetrainsText}}
+                            </p>
+                            <i class="bi bi-chevron-down chevron"></i>
+                            @if(isShow=='drivetrains'){
+                            <div class="droplist">
+            
+                                @if(selectedModelName){
+                                    @for(drivetrain of drivetrains;track drivetrain){
+            
+                                        <p (click)="selectedDrivetrainsFun(drivetrain)" (click)="isOpen('drivetrains')">
+                                            {{drivetrain}}
+                                        </p>
+            
+                                    }
+                                }
+            
+            
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 mb-4">
+
+                <div class="fieldInput">
+
+                    <div class="label d-flex">
+                        <h5 [class.error]="selectedMileage && (selectedMileage < 500 || selectedMileage> 300000)">قراءة العداد</h5>
+                        @if(selectedMileage && (selectedMileage < 500 || selectedMileage> 300000)){
+                        <i class="bi bi-exclamation-circle-fill text-danger z-3"></i>
+                        }
+                    </div>
+            
+                    <div class="input position-relative">
+                        
+                    <input class="box w-100" type="text" maxlength="6" inputmode="numeric" [class.active]="selectedMileage > 0" [class.error]="selectedMileage && (selectedMileage < 500 || selectedMileage> 300000)" (input)="onMileage($event)" [placeholder]="selectedRateCarText" >
+                    @if(errorFromApi()=="Input should be greater than or equal to 500"){
+                    <p class="alert mt-2  alert-danger w-100 m-auto text-capitalize text-center fw-medium mb-0 mt-3">يجب ان لا تقل قراءة العداد عن 500 ميل ولا تزيد عن  300,000  </p>
+                    }
+                    @if (selectedMileage && (selectedMileage < 500 || selectedMileage> 300000)) {
+                        <p class="alert mt-2 alert-danger w-100 m-auto text-center fw-medium mb-0 mt-3">
+                            يجب ألا تقل قراءة العداد عن 500 ميل ولا تزيد عن 300,000 ميل.
+                        </p>
+                        }
+                    </div>              
+                </div>
+            </div>
+
+            <div class="col-12  d-flex flex-row-reverse text-end pt-2 columnSubmit">
+                <button type="submit" class="btn-inquiry" id="inquiryBtn" [disabled]="!isFormValid" [class.disabled]="!isFormValid">
+                    <span class="btn-content">
+                        <i class="bi bi-search"></i>
+                        <span>استعلام</span>
+                    </span>
+                </button>
+                @if(!isFormValid){
+                    <p>يرجى ملئ جميع البيانات</p>
+                }
+                
+            </div>
+
+            @if(isLoading()){
+                <p class="alert alert-secondary w-50 m-auto text-capitalize text-center fw-medium mb-0 mt-3"> جاري المعالجه من فضلك انتظر
+                </p>
+            }
+
+            @else{
+                @if (carPrice()) {
+                <app-car-evaluation [priceFromHead]="carPrice()" [carInfoFromObj]="carDetails()"
+                    [errorFromHead]="errorFromApi()"></app-car-evaluation>
+                }@else if(errorFromApi()){
+                    <p class="alert alert-danger mt-4 w-50 m-auto text-center">
+                        حدث خطأ، يرجى المحاولة مرة أخرى.
+                    </p>
+                }
+            }
+
+            
+
+        </div>
+    </form>
+</div>
+
+
+

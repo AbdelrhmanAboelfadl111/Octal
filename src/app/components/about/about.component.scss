@@ -1,0 +1,82 @@
+@use "../../../styels/fonts" as *;
+@use "../../../styels/mixin" as *;
+@use "../../../styels/var" as *;
+
+section{
+    @include responsive(350){
+        height: 100%!important;
+    }
+    .container {
+            @include flexCenter();
+            padding: 30px;
+    
+            .cover {
+                background-color: white;
+                -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+                -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+                box-shadow: 3px 3px 10px 3px #dddddd;
+                padding: 30px;
+                border-radius: 20px;
+                font-family: 'Hacen';
+                overflow: hidden;
+                .item{
+                    &:nth-of-type(1){
+                        h2{
+                            transition: all 0.7s;
+                        }
+                        h5{
+                            transition: all 0.7s 0.5s;
+                        }
+                    }
+                    &:nth-of-type(2){
+                        h2{
+                            transition: all 0.7s 0.9s;
+                        }
+                        h5{
+                            transition: all 0.7s 1.4s;
+                        }
+                    }
+                    &:nth-of-type(3){
+                        h2{
+                            transition: all 0.7s 1.7s;
+                        }
+                        h5{
+                            transition: all 0.7s 2.2s;
+                        }
+                    }
+                }
+                &.active{
+                    h2{
+                        transform: translateX(0%);
+                        opacity: 1;
+                    }
+                    h5{
+                        transform: translateY(0px);
+                        opacity: 1;
+                    }
+                }
+                h2 {
+                    background-color: var(--blue-900);
+                    width: fit-content;
+                    color: white;
+                    padding: 5px 10px;
+                    padding-left: 20px;
+                    border-radius: 10px 0px 0px 10px;
+                    margin-bottom: 20px;
+                    transform: translateX(110%);
+                    opacity: 0;
+                    
+                    -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+                        -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+                        box-shadow: 3px 3px 10px 3px #dddddd;
+                }
+    
+                h5 {
+                    line-height: 30px;
+                    transform: translateY(80px);
+                    opacity: 0;
+                    
+                }
+            }
+        }
+}

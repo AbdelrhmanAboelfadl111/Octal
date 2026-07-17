@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+@use "./styels/fonts" as *;
+@use "./styels/mixin" as *;
+@use "./styels/var" as *;
+body {
+    color: var(--ink);
+    background: var(--white);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+::selection {
+    background: var(--blue-100);
+    color: var(--blue-900);
+}
+/* عرض الـ Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* الخلفية */
+::-webkit-scrollbar-track {
+    background: #eaeaea;
+}
+
+/* الجزء اللي بيتحرك */
+::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+    border-radius: 10px;
+}
+
+/* عند الـ Hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #777777;
+}
+.octal{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    animation: rotate 5s linear infinite;
+    @include responsive(350){
+        display: none;
+    }
+    @include responsive(650){
+        display: initial;
+        width: 50px;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

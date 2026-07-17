@@ -1,0 +1,310 @@
+@use "../../../../styels/fonts" as *;
+@use "../../../../styels/mixin" as *;
+@use "../../../../styels/var" as *;
+
+
+
+.page {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-block:50px;
+}
+
+.mi-wrap {
+    width: 100%;
+}
+
+/* ---- Card container ---- */
+.mi-card {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 20px 48px rgba(110, 14, 30, 0.12);
+    overflow: hidden;
+    border: 1px solid #EEF1F4;
+    font-family: monospace;
+    
+}
+
+/* ---- Header ---- */
+.mi-head {
+    position: relative;
+    background: linear-gradient(120deg, #C8102E 0%, #8F1224 55%, #6E0E1E 100%);
+    padding: 24px 28px;
+    overflow: hidden;
+}
+
+.mi-head-pattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(circle at 85% 20%, rgba(255, 255, 255, 0.10) 0, transparent 45%),
+        radial-gradient(circle at 10% 90%, rgba(255, 255, 255, 0.06) 0, transparent 40%);
+    pointer-events: none;
+}
+
+.mi-head-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.mi-head-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.mi-icon-chip {
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.35rem;
+    flex-shrink: 0;
+}
+
+.mi-title {
+    color: #fff;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.mi-subtitle {
+    color: #FBE2E5;
+    font-size: .8rem;
+    margin: 3px 0 0;
+}
+
+.mi-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    color: #fff;
+    font-size: .74rem;
+    font-weight: 700;
+    padding: 7px 14px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.mi-status i {
+    color: #7CE3A0;
+    font-size: .85rem;
+}
+
+/* ---- Price hero ---- */
+.mi-price-hero {
+    text-align: center;
+    padding: 26px 24px 22px;
+    border-bottom: 1px solid #F0F2F5;
+    background: linear-gradient(180deg, #FDF9F0, #fff);
+    
+}
+
+.mi-price-label {
+    font-size: .78rem;
+    color: #8A6B24;
+    font-weight: 800;
+    letter-spacing: .3px;
+    margin: 0 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 15px;
+}
+
+.mi-price-value {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 900;
+    font-size: 2.3rem;
+    color: #6E0E1E;
+    margin: 0;
+    line-height: 1;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+}
+
+.mi-price-value .mi-currency {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #A87F2A;
+}
+
+.mi-chip-gold {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #FBF3E1;
+    border: 1px solid #E4C989;
+    color: #8A6B24;
+    font-weight: 800;
+    font-size: .72rem;
+    padding: 6px 13px;
+    border-radius: 999px;
+    margin-top: 12px;
+}
+
+/* ---- Section label ---- */
+.mi-section-label {
+    padding: 18px 28px 4px;
+    font-size: .76rem;
+    font-weight: 800;
+    color: #94A3B8;
+    letter-spacing: .4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    
+}
+
+.mi-section-label i {
+    color: #C8102E;
+}
+
+/* ---- Spec table (4 columns) ---- */
+.mi-table-wrap {
+    padding: 8px 28px 22px;
+    overflow-x: auto;
+}
+
+table.mi-spec-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    table-layout: fixed;
+    border: 1px solid #EEF1F4;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 15px;
+    p{
+        font-size: 15px;
+    }
+}
+
+table.mi-spec-table td {
+    padding: 12px 14px;
+    vertical-align: middle;
+    border-bottom: 1px solid #F0F2F5;
+    border-left: 1px solid #F0F2F5;
+    font-size: 15px;
+}
+
+table.mi-spec-table tr td:last-child {
+    border-left: none;
+}
+
+table.mi-spec-table tr:last-child td {
+    border-bottom: none;
+}
+
+table.mi-spec-table tr:nth-child(odd) {
+    background: #FAFBFC;
+}
+
+.mi-cell-label {
+    font-size: .72rem;
+    color: #94A3B8;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 0 4px;
+    white-space: nowrap;
+}
+
+.mi-cell-label i {
+    color: #C8102E;
+    font-size: .85rem;
+}
+
+.mi-cell-value {
+    font-size: .9rem;
+    color: #152238;
+    font-weight: 800;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.mi-est-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    background: #FBE2E5;
+    color: #8F1224;
+    font-size: .56rem;
+    font-weight: 800;
+    padding: 2px 6px;
+    border-radius: 999px;
+}
+
+td.mi-estimated {
+    background: #FFF9FA;
+}
+
+/* ---- Footnote ---- */
+.mi-footnote {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px 28px;
+    color: #8593A6;
+    font-size: .75rem;
+    line-height: 1.7;
+    background: #F8FAFB;
+    border-top: 1px solid #F0F2F5;
+}
+
+.mi-footnote i {
+    color: #C8102E;
+    font-size: .88rem;
+    margin-top: 2px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 640px) {
+
+    table.mi-spec-table,
+    table.mi-spec-table tbody,
+    table.mi-spec-table tr,
+    table.mi-spec-table td {
+        display: block;
+        width: 100%;
+    }
+
+    table.mi-spec-table td {
+        border-left: none !important;
+    }
+
+    .mi-price-value {
+        font-size: 1.9rem;
+    }
+
+    .mi-head,
+    .mi-price-hero,
+    .mi-section-label,
+    .mi-table-wrap,
+    .mi-footnote {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}

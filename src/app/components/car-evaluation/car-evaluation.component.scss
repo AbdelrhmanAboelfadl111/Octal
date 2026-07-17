@@ -1,0 +1,207 @@
+@use "../../../styels/fonts" as *;
+@use "../../../styels/mixin" as *;
+@use "../../../styels/var" as *;
+
+.result-section {
+    padding: 10px 0 90px;
+    background: var(--gray-50);
+    scroll-margin-top: 100px;
+}
+
+.result-wrap {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.result-wrap.visible {
+    display: block;
+    animation: fadeUp .6s var(--ease) both;
+}
+
+.result-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 34px 4px 22px;
+    flex-wrap: wrap;
+}
+
+.result-heading h3 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--blue-900);
+    margin: 0;
+    font-family: 'Hacen';
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--blue-100);
+    color: var(--blue-700);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 7px 16px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+   
+}
+.eyebrow-alt {
+    background: var(--gold-100);
+    color: var(--gold-dark);
+    font-family: 'Hacen';
+}
+
+
+/* ---- Table ---- */
+.table-card {
+    background: #fff;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    padding: 8px;
+    overflow: hidden;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: .94rem;
+}
+
+.result-table thead th {
+    background: var(--blue-900);
+    color: #fff;
+    font-weight: 700;
+    font-size: .86rem;
+    padding: 16px 20px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.result-table thead th:first-child {
+    border-radius: 0 10px 0 0;
+}
+
+.result-table thead th:last-child {
+    border-radius: 10px 0px 0 0;
+}
+
+.result-table thead th i {
+    margin-inline-end: 6px;
+    opacity: .85;
+}
+
+.result-table tbody td {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--gray-100);
+    color: var(--ink);
+    vertical-align: middle;
+}
+
+.result-table tbody tr:nth-child(even) {
+    background: var(--gray-50);
+}
+
+.result-table tbody tr {
+    transition: background .18s var(--ease), transform .18s var(--ease);
+}
+
+.result-table tbody tr:hover {
+    background: var(--blue-50);
+}
+
+.result-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.cell-car {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.cell-car .icon-chip {
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    background: var(--blue-100);
+    color: var(--blue-700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.price-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--gold-100), #fff);
+    border: 1px solid var(--gold);
+    color: var(--gold-dark);
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.price-badge i {
+    font-size: .9rem;
+}
+
+.price-badge .currency {
+    font-size: .74rem;
+    font-weight: 600;
+    color: var(--gray-600);
+}
+
+.table-footnote {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 20px 10px;
+    color: var(--gray-400);
+    font-size: .8rem;
+}
+
+.result-actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 26px;
+    flex-wrap: wrap;
+}
+
+.btn-outline-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border: 1.5px solid var(--gray-200);
+    color: var(--blue-800);
+    font-weight: 700;
+    font-size: .88rem;
+    padding: 11px 22px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all .2s var(--ease);
+}
+
+.btn-outline-action:hover {
+    border-color: var(--blue-700);
+    background: var(--blue-50);
+    transform: translateY(-2px);
+}
+
+.btn-print:hover {
+    border-color: var(--gold);
+    color: var(--gold-dark);
+    background: var(--gold-100);
+}

@@ -1,0 +1,59 @@
+<div class="cover">
+    <div class="result-wrap" id="resultWrap">
+
+        <div class="result-heading">
+            <div>
+                <span class="eyebrow eyebrow-alt"><i class="bi bi-graph-up-arrow"></i> نتيجة الاستعلام</span>
+                <h3>القيمة السوقية المتوقعة</h3>
+            </div>
+        </div>
+
+        <div class="table-card">
+            <div class="table-responsive">
+                <table class="result-table" id="resultTable">
+                    <thead>
+                        <tr>
+                            <th><i class="bi bi-car-front-fill"></i> السيارة</th>
+                            <th><i class="bi bi-bookmark-star"></i> موديل السيارة</th>
+                            <th><i class="bi bi-calendar-event"></i> سنة الإصدار</th>
+                            <th><i class="bi bi-cash-coin"></i> السعر المتوقع</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultTableBody">
+                        <td data-label="السيارة">
+                            <span class="cell-car">
+                                <span class="icon-chip"><i class="bi bi-car-front-fill"></i></span>
+                                <p class="mb-0">{{ carInfoFromObj()?.make }}</p>
+                            </span>
+                        </td>
+                        <td data-label="موديل السيارة">
+                            <p class="mb-0">{{ carInfoFromObj()?.model }}</p>
+                        </td>
+                        <td data-label="سنة الإصدار">
+                            <p class="mb-0">{{ carInfoFromObj()?.year }}</p>
+                        </td>
+                        <td data-label="السعر المتوقع">
+                            <span class="price-badge">
+                                <i class="bi bi-cash-coin"></i>
+                                
+                                <span class="currency"><p class="mb-0 fs-6">{{priceFromHead()|number}}</p></span>
+                                <p class="mb-0">جنيه مصري</p>
+                            </span>
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-footnote">
+                <i class="bi bi-info-circle"></i>
+                القيمة تقديرية وقابلة للتغيير وفقًا لحالة المركبة الفعلية وتقرير المعاينة الفني
+            </div>
+        </div>
+
+        <div class="result-actions">
+            <button (click)="reloadPage()" class="btn-outline-action" id="newInquiryBtn"><i
+                    class="bi bi-arrow-clockwise"></i> استعلام
+                جديد</button>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,3653 @@
+{
+  "Volkswagen": {
+    "Jetta": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Hatchback",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Atlas": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Hatchback",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Tiguan": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Hatchback",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Golf": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Hatchback",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Passat": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Hatchback",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    }
+  },
+  "Lexus": {
+    "RX": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "IS": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "ES": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "NX": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "GX": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    }
+  },
+  "Subaru": {
+    "Crosstrek": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Outback": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Impreza": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Forester": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    }
+  },
+  "Cadillac": {
+    "Lyriq": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "XT5": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "CT5": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "Escalade": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    }
+  },
+  "Toyota": {
+    "Highlander": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "Camry": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Corolla": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "RAV4": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Tacoma": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    }
+  },
+  "Land Rover": {
+    "Defender": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        2.0,
+        2.5,
+        3.0,
+        3.5
+      ]
+    },
+    "Range Rover": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        2.0,
+        2.5,
+        3.0,
+        3.5
+      ]
+    },
+    "Discovery": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        2.0,
+        2.5,
+        3.0,
+        3.5
+      ]
+    }
+  },
+  "Mazda": {
+    "Mazda3": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Hatchback",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "Mazda6": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Hatchback",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "CX-9": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Hatchback",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "CX-5": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Hatchback",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    }
+  },
+  "Ram": {
+    "2500": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "3500": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "1500": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    }
+  },
+  "Chrysler": {
+    "300": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Minivan",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "Pacifica": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Minivan",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    }
+  },
+  "GMC": {
+    "Yukon": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck",
+        "SUV"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Acadia": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck",
+        "SUV"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Sierra": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck",
+        "SUV"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "Terrain": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck",
+        "SUV"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    }
+  },
+  "Volvo": {
+    "S60": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan",
+        "Wagon"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "V60": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan",
+        "Wagon"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "XC60": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan",
+        "Wagon"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "XC90": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan",
+        "Wagon"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    }
+  },
+  "Audi": {
+    "Q5": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "R8": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "A6": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "Q7": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "A4": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    }
+  },
+  "Chevrolet": {
+    "Silverado": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Camaro": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Equinox": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Malibu": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Tahoe": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    }
+  },
+  "Tesla": {
+    "Model 3": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Electric"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "Model Y": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Electric"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "Model S": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Electric"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "Model X": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Electric"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    }
+  },
+  "Hyundai": {
+    "Sonata": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "Tucson": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "Elantra": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "Santa Fe": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    }
+  },
+  "Ford": {
+    "Explorer": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Mustang": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "F-150": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Escape": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Focus": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    }
+  },
+  "Porsche": {
+    "911": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        2.5,
+        3.0,
+        3.5,
+        4.0
+      ]
+    },
+    "Panamera": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0
+      ]
+    },
+    "Macan": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0
+      ]
+    },
+    "Cayenne": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0
+      ]
+    }
+  },
+  "Acura": {
+    "MDX": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "TLX": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "RDX": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "Integra": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    }
+  },
+  "Nissan": {
+    "Sentra": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "Pathfinder": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "Titan": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "Rogue": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Altima": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Pickup Truck",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    }
+  },
+  "Kia": {
+    "Forte": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "Sorento": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "Sportage": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "Telluride": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "Optima": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    }
+  },
+  "Jeep": {
+    "Grand Cherokee": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Cherokee": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Wrangler": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Compass": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "SUV"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    }
+  },
+  "BMW": {
+    "M3": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "3 Series": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "X5": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "X3": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    },
+    "5 Series": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    }
+  },
+  "Dodge": {
+    "Durango": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Challenger": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Charger": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    }
+  },
+  "Mercedes-Benz": {
+    "S-Class": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "E-Class": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "GLE": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    },
+    "C-Class": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Coupe",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ]
+    }
+  },
+  "Honda": {
+    "Accord": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Minivan",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "Civic": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Minivan",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    },
+    "Odyssey": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Minivan",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "Pilot": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Minivan",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5
+      ]
+    },
+    "CR-V": {
+      "trims": [
+        "Base",
+        "EX",
+        "LX",
+        "Limited",
+        "Sport",
+        "Touring"
+      ],
+      "body_types": [
+        "Minivan",
+        "SUV",
+        "Sedan"
+      ],
+      "fuel_types": [
+        "Diesel",
+        "Electric",
+        "Gasoline"
+      ],
+      "transmissions": [
+        "Automatic",
+        "Manual"
+      ],
+      "drivetrains": [
+        "AWD",
+        "FWD",
+        "RWD"
+      ],
+      "engine_capacities": [
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ]
+    }
+  }
+}

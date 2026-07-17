@@ -1,0 +1,11 @@
+@use "../../../styels/fonts" as *;
+@use "../../../styels/mixin" as *;
+@use "../../../styels/var" as *;
+
+header {
+    
+    background: linear-gradient(180deg, var(--blue-50) 0%, var(--white) 62%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

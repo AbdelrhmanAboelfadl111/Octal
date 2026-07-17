@@ -1,0 +1,256 @@
+@use "../../../styels/fonts" as *;
+@use "../../../styels/mixin" as *;
+@use "../../../styels/var" as *;
+.cover{
+    background-color: white;
+    padding: 30px 50px;
+    border-radius: 20px;
+    transform: translateY(80px);
+    opacity: 0;
+    transition: all 1s 0.3s;
+    &.active {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+        -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+    box-shadow: 3px 3px 10px 3px #dddddd;
+    .form{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        .row{
+            .inquiry-card {
+                    position: relative;
+                    z-index: 1;
+                    max-width: 1020px;
+                    margin: 0 auto;
+                    background: rgba(255, 255, 255, 0.72);
+                    backdrop-filter: blur(20px) saturate(160%);
+                    -webkit-backdrop-filter: blur(20px) saturate(160%);
+                    border: 1px solid rgba(255, 255, 255, 0.6);
+                    border-radius: var(--radius-xl);
+                    box-shadow: var(--shadow-lg);
+                    padding: 34px 34px 30px;
+                    animation: fadeUp .8s .1s var(--ease) both;
+            }
+        
+            .inquiry-card-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 24px;
+                padding-bottom: 18px;
+                border-bottom: 1px dashed var(--gray-200);
+            }
+        
+            .inquiry-card-header h3 {
+                font-size: 1.3rem;
+                font-weight: 800;
+                color: var(--blue-900);
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin: 0;
+                font-family: 'Hacen';
+            }
+        
+            .inquiry-card-header h3 i {
+                color: var(--blue-700);
+            }
+        
+            .badge-steps {
+                background: var(--blue-900);
+                color: #fff;
+                font-size: 1rem;
+                font-weight: 700;
+                padding: 5px 12px;
+                border-radius: 999px;
+                font-family: 'Hacen';
+            }
+            
+            .columnSubmit{
+                .btn-inquiry {
+                        position: relative;
+                        border: none;
+                        background: linear-gradient(135deg, var(--blue-700), var(--blue-900));
+                        color: #fff;
+                        font-family: 'Hacen';
+                        font-weight: 700;
+                        font-size: 1.05rem;
+                        padding: 16px 56px;
+                        border-radius: 999px;
+                        cursor: pointer;
+                        transition: transform .25s var(--ease), box-shadow .25s var(--ease), opacity .2s;
+                        overflow: hidden;
+                        min-width: 220px;
+                        &.disabled{
+                            background: linear-gradient(135deg, gray, black);
+                            transform: scale(0.9);
+                            
+                        }
+                        span{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                        }
+                }
+            
+            
+                .btn-inquiry:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 18px 34px rgba(0, 91, 172, .38);
+                }
+
+            }
+
+            .fieldInput{
+                .label{
+                    gap: 5px;
+                    h5.error{
+                        color: red!important;
+                    }
+                }
+                h5{
+                    font-family: 'Hacen';
+                }
+                .input{
+                    input.error{
+                        border-color: red!important;
+                    }
+                    input.box:focus{
+                        border-color: rgb(127, 127, 127)!important;
+                        outline: none;
+                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    }
+                    .box{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 10px;
+                        border: 1px solid rgb(220, 220, 220);
+                        border-radius: 5px;
+                        padding: 10px 10px;
+                        position: relative;
+                        transition: all 0.3s ease;
+                        cursor: pointer;
+
+                        @include responsive(650){
+                            font-size: 14px;
+                        }
+                        @include responsive(850){
+                            font-size: 16px;
+                        }
+                        &.active{
+                            border-color: rgb(127, 127, 127);
+                            
+                            .chevron {
+                                color: var(--blue-700);
+                                transform: rotate(180deg);
+                            }
+                        }
+                        &.active2{
+                            border-color: rgb(127, 127, 127);
+                            
+                            .chevron {
+                                color: var(--blue-700);
+                            }
+                        }
+                        &:hover{
+                            border-color: rgb(127, 127, 127);
+                            .chevron{
+                                color: var(--blue-700);
+                                transition: all 0.3s ease;
+                            }
+                        }
+                        p.placeholderCustom{
+                            color: rgb(183, 183, 183);
+                        }
+                        .chevron{
+                            position: absolute;
+                            left: 20px;
+                            color: gray;
+                            @include responsive(650) {
+                                left: 7px;
+                            }
+                        }
+                        .field-icon{
+                            color: var(--blue-700);
+                        }
+                        .droplist{
+                            position: absolute;
+                            left: 0;
+                            top: 100%;
+                            max-height: 270px;
+                            overflow: auto;
+                            background-color: white;
+                            width: 100%;
+                            margin-top: 10px;
+                            -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+                            -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+                            box-shadow: 3px 3px 10px 3px #dddddd;
+                            padding: 10px;
+                            border-radius: 5px;
+                            z-index: 50;
+                            p{
+                                margin-bottom: 10px;
+                                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                                padding-block: 5px;
+                                padding-inline: 5px;
+                                border-radius: 5px;
+                                transition: all 0.3s ease;
+                                font-weight: 400;
+                                &:hover{
+                                    background-color: var(--blue-500);
+                                    color: white;
+                                }
+                                &.notAllowd{
+                                    background-color: var(--blue-900);
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .columnSubmit{
+                justify-content: space-between;
+                @include responsive(350){
+                    flex-direction: column!important;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                }
+                @include responsive(850){
+                    flex-direction: row-reverse!important;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .btn-inquiry {
+                    border-radius: 5px;
+                    &.disabled {
+                            background: linear-gradient(135deg, gray, black);
+                            transform: scale(1);
+                            &:hover {
+                                box-shadow: none;
+                            }
+                        }
+                }
+                p{
+                    margin-bottom: 0;
+                    font-family: 'Hacen';
+                    font-size: 18px;
+                    background-color: var(--blue-600);
+                    color: white;
+                    width: fit-content;
+                    padding: 15px;
+                    border-radius: 3px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+            }
+        }
+    }
+}

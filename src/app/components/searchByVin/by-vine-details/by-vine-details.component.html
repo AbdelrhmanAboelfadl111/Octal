@@ -1,0 +1,96 @@
+
+<main class="page">
+    
+    <div class="mi-wrap">
+        <div class="mi-card">
+
+            <!-- Header -->
+            <div class="mi-head">
+                <div class="mi-head-pattern" aria-hidden="true"></div>
+                <div class="mi-head-row">
+                    <div class="mi-head-left">
+                        <span class="mi-icon-chip"><i class="bi bi-car-front-fill"></i></span>
+                        <div>
+                            <p class="mi-title">{{carInfoFromObj().make??'غير مقدر'}} {{carInfoFromObj().model??'غير مقدر'}}</p>
+                            <p class="mi-subtitle">موديل {{carInfoFromObj().year??'غير مقدر'}} · فئة {{carInfoFromObj().trim??'غير مقدر'}}</p>
+                        </div>
+                    </div>
+                    <span class="mi-status"><i class="bi bi-check-circle-fill"></i> {{carInfoFromObj().status??'غير مقدر'}}</span>
+                </div>
+            </div>
+
+            <!-- Price Hero -->
+            <div class="mi-price-hero">
+                <p class="mi-price-label"><i class="bi bi-graph-up-arrow"></i> السعر المتوقع للمركبة</p>
+                <p class="mi-price-value">@if (carInfoFromObj().price != 0) {
+                {{ carInfoFromObj().price | number }}
+                } @else {
+                غير مقدر
+                }<span class="mi-currency">جنيه مصري</span></p>
+                <span class="mi-chip-gold"><i class="bi bi-cash-coin"></i> تقييم تلقائي</span>
+            </div>
+
+            <p class="mi-section-label"><i class="bi bi-clipboard2-data"></i> مواصفات المركبة</p>
+
+            <!-- Spec Table: 4 columns -->
+            <div class="mi-table-wrap">
+                <table class="mi-spec-table">
+                    <tbody>
+                        <tr>
+                            <td [class.mi-estimated]="!carInfoFromObj().make">
+                                <p class="mi-cell-label"><i class="bi bi-award"></i>الماركة</p>
+                                <p class="mi-cell-value">{{carInfoFromObj().make??'غير مقدر'}}</p>
+                            </td>
+                            <td [class.mi-estimated]="!carInfoFromObj().model">
+                                <p class="mi-cell-label"><i class="bi bi-car-front"></i>الموديل</p>
+                                <p class="mi-cell-value">{{carInfoFromObj().model??'غير مقدر'}}</p>
+                            </td>
+                            <td [class.mi-estimated]="!carInfoFromObj().year">
+                                <p class="mi-cell-label"><i class="bi bi-calendar3"></i>سنة الصنع</p>
+                                <p class="mi-cell-value">{{carInfoFromObj().year??'غير مقدر'}}</p>
+                            </td>
+                            <td [class.mi-estimated]="!carInfoFromObj().mileage">
+                                <p class="mi-cell-label"><i class="bi bi-speedometer"></i>قراءة العداد</p>
+                                <p class="mi-cell-value">{{carInfoFromObj().mileage??'غير مقدر'}} ميل</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td [class.mi-estimated]="!carInfoFromObj().transmission">
+                                <p class="mi-cell-label"><i class="bi bi-gear"></i>ناقل الحركة</p>
+                                <p class="mi-cell-value">{{carInfoFromObj().transmission??'غير مقدر'}}</p>
+                            </td>
+                            <td [class.mi-estimated]="!carInfoFromObj().fuel_type">
+                                <p class="mi-cell-label"><i class="bi bi-fuel-pump"></i>نوع الوقود</p>
+                                <p class="mi-cell-value">{{carInfoFromObj().fuel_type??'غير مقدر'}}</p>
+                            </td>
+                            <td [class.mi-estimated]="!carInfoFromObj().drivetrain">
+                                <p class="mi-cell-label"><i class="bi bi-signpost-split"></i>نظام الدفع</p>
+                                <p class="mi-cell-value">{{carInfoFromObj().drivetrain??'غير مقدر'}} </p>
+                            </td>
+                            <td [class.mi-estimated]="!carInfoFromObj().body_type">
+                                <p class="mi-cell-label"><i class="bi bi-grid-3x3-gap"></i>نوع الهيكل</p>
+                                <p class="mi-cell-value">{{carInfoFromObj().body_type??'غير مقدر'}}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td [class.mi-estimated]="!carInfoFromObj().engine_capacity">
+                                <p class="mi-cell-label"><i class="bi bi-cpu"></i>سعة المحرك</p>
+                                <p class="mi-cell-value">{{carInfoFromObj().engine_capacity??'غير مقدر'}} لتر</p>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Footnote -->
+            <div class="mi-footnote">
+                <i class="bi bi-info-circle"></i>
+                <span>تنبيه: يعتمد هذا النظام على نموذج ذكاء اصطناعي لا يزال قيد التطوير والتحسين، لذا قد تحتوي النتائج أو التقديرات المعروضة
+                على نسبة من عدم الدقة. يُرجى استخدام النتائج كمرجع استرشادي، وليس كقرار نهائي.</span>
+            </div>
+
+        </div>
+    </div>
+</main>
