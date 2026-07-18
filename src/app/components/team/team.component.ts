@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { FooterComponent } from "../footer/footer.component";
 
 @Component({
@@ -7,4 +7,11 @@ import { FooterComponent } from "../footer/footer.component";
   templateUrl: './team.component.html',
   styleUrl: './team.component.scss',
 })
-export class TeamComponent {}
+export class TeamComponent {
+  public isActive = signal(false);
+
+  ngOnInit() {
+    this.isActive.set(true);
+  }
+
+}
