@@ -1,0 +1,77 @@
+@use "../../../../styels/fonts" as *;
+@use "../../../../styels/mixin" as *;
+@use "../../../../styels/var" as *;
+.cover{
+    background-color: white;
+    -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+    -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+    box-shadow: 3px 3px 10px 3px #dddddd;
+    padding: 30px;
+    width: 350px;
+    @include responsive(350){
+        width: 300px;
+    }
+    @include responsive(450){
+        width: 350px;
+    }
+    border-radius: 20px;
+    @include flexCenter();
+    flex-direction: column;
+    .imgContainer{
+        img{
+            width: 120px;
+        }
+    }
+    .FormContainer{
+        width: 100%;
+        form{
+            width: 100% ;
+            .inputContainer{
+
+                input{
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    background-color: transparent;
+                    border: 0;
+                    border: 2px solid #1b040089;
+                    transition: all 0.3s ease;
+                    &:focus{
+                        border: 2px solid #b51b00;
+                    }
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+            .btnsContainer{
+                button{
+                        background: linear-gradient(135deg, gray, black);
+                        transform: scale(1) !important;
+                        box-shadow: none !important;
+                        position: relative;
+                        border: none;
+                        color: #fff;
+                        font-family: 'Hacen';
+                        font-weight: 700;
+                        font-size: 1.05rem;
+                        padding: 16px 56px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        overflow: hidden;
+                        min-width: 220px;
+                        width: 100%;
+                        margin: auto;
+                        cursor: no-drop;
+                        &.active {
+                            cursor: pointer;
+                            background: linear-gradient(135deg, var(--blue-700), var(--blue-900));
+                            color: #fff;
+                
+                        }
+                }
+            }
+        }
+    }
+}

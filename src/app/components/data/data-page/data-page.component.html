@@ -1,0 +1,14 @@
+<section class="py-5">
+    @if(!dataFromApiArrived()){
+        <div class="container py-5">
+            <div class="row">
+                <app-upper-head [title]="title()" [brief]="supTitle()"></app-upper-head>
+            </div>
+            <div class="row">
+                <app-login-form></app-login-form>
+            </div>
+        </div>
+    }
+</section>
+
+<app-footer></app-footer>

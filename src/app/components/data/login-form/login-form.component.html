@@ -1,0 +1,21 @@
+<div class="cover">
+    <div class="imgContainer mb-4">
+        <img src="assets/admin.png" alt="admin">
+    </div>
+    <div class="FormContainer">
+        <form >
+            <div class="inputContainer mb-4 position-relative d-flex justify-content-center align-items-center flex-column">
+                <input type="text" class="w-100 mb-0" placeholder="الرقم السري">
+            </div>
+            <div class="btnsContainer ">
+                <button type="submit" [class.active]="isTypedSecretKey()">
+                    @if (isTypedSecretKey()) {
+                        الحصول على البيانات
+                    }@else{
+                        من فضلك ادخل الرقم السري
+                    }
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
