@@ -257,9 +257,19 @@ table.mi-spec-table tr:nth-child(odd) {
     border-radius: 999px;
 }
 
-td.mi-estimated {
-    background: #FFF9FA;
+td {
+    p{
+        .estimated {
+            background-color: wheat;
+            padding: 3px 10px;
+            border-radius: 6px;
+            color: #8a6b24;
+        }
+    }
+    
+    
 }
+
 
 /* ---- Footnote ---- */
 .mi-footnote {

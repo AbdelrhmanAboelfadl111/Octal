@@ -3,18 +3,25 @@
         <img src="assets/admin.png" alt="admin">
     </div>
     <div class="FormContainer">
-        <form >
+        <form (submit)="getLogs()">
             <div class="inputContainer mb-4 position-relative d-flex justify-content-center align-items-center flex-column">
-                <input type="text" class="w-100 mb-0" placeholder="الرقم السري">
+                <input type="text" name="apiKey" (input)="onInput($event)" class="w-100 mb-0" placeholder="الرقم السري"  [(ngModel)]="apiKey">
             </div>
             <div class="btnsContainer ">
-                <button type="submit" [class.active]="isTypedSecretKey()">
-                    @if (isTypedSecretKey()) {
-                        الحصول على البيانات
-                    }@else{
-                        من فضلك ادخل الرقم السري
+                <button type="submit" [class.active]="isTypedSecretKey()" [disabled]="isLoading()">
+                
+                    @if (isLoading()) {
+                    جاري معالجة البيانات...
+                    } @else if (isTypedSecretKey()) {
+                    الحصول على البيانات
+                    } @else {
+                    من فضلك ادخل الرقم السري
                     }
+                
                 </button>
+                @if(isError()){
+                    <p class="alert alert-danger text-center mb-0 mt-2">{{(errorFromXapi)?errorFromXapi:"حدث خطأ يرجى اعادة المحاولة"}}</p>
+                }
             </div>
         </form>
     </div>

@@ -1,12 +1,16 @@
 <section class="py-5">
     @if(!dataFromApiArrived()){
-        <div class="container py-5">
+        <div class="container">
             <div class="row">
                 <app-upper-head [title]="title()" [brief]="supTitle()"></app-upper-head>
             </div>
             <div class="row">
-                <app-login-form></app-login-form>
+                <app-login-form (logsLoaded)="onLogsLoaded($event)" (ChangeActiveInParent)="VarFromChild($event)"></app-login-form>
             </div>
+        </div>
+    }@else {
+        <div class="container">
+            <app-operations-log class="w-100" [operations]="logs()"></app-operations-log>
         </div>
     }
 </section>

@@ -12,7 +12,7 @@ export class SendToModelService {
 
   private http = inject(HttpClient);
 
-  private apiUrl = 'https://churn-detection-classification-project.fastapicloud.dev/predict/linear';
+  private apiUrl = 'https://api-car-prediction-main.fastapicloud.dev/predict/linear';
 
   sendData(data: any) {
     return this.http.post<PredictionResponse>(this.apiUrl, data);

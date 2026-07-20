@@ -61,24 +61,51 @@
                             </td>
                             <td [class.mi-estimated]="!carInfoFromObj().fuel_type">
                                 <p class="mi-cell-label"><i class="bi bi-fuel-pump"></i>نوع الوقود</p>
-                                <p class="mi-cell-value">{{carInfoFromObj().fuel_type??'غير مقدر'}}</p>
+                                <p class="mi-cell-value">
+                                    @if(carInfoFromObj().estimated_engine_capacity){
+                                    {{carInfoFromObj().fuel_type}} <span class="estimated">هذه القيمه مقدره</span>
+                                    }@else{
+                                    {{carInfoFromObj().fuel_type??'غير مقدر'}}
+                                    }
+                                </p>
                             </td>
                             <td [class.mi-estimated]="!carInfoFromObj().drivetrain">
                                 <p class="mi-cell-label"><i class="bi bi-signpost-split"></i>نظام الدفع</p>
-                                <p class="mi-cell-value">{{carInfoFromObj().drivetrain??'غير مقدر'}} </p>
+                                <p class="mi-cell-value">
+                                    @if(carInfoFromObj().drivetrain){
+                                    {{carInfoFromObj().drivetrain}} <span class="estimated">هذه القيمه مقدره</span>
+                                    }@else{
+                                    {{carInfoFromObj().drivetrain??'غير مقدر'}}
+                                    }
+                                </p>
                             </td>
                             <td [class.mi-estimated]="!carInfoFromObj().body_type">
                                 <p class="mi-cell-label"><i class="bi bi-grid-3x3-gap"></i>نوع الهيكل</p>
-                                <p class="mi-cell-value">{{carInfoFromObj().body_type??'غير مقدر'}}</p>
+                                <p class="mi-cell-value">
+                                    @if(carInfoFromObj().estimated_body_type){
+                                        {{carInfoFromObj().body_type??'غير مقدر'}} هذه القيمه مقدره
+                                    }@else{
+                                        {{carInfoFromObj().body_type??'غير مقدر'}}
+                                    }
+                                    
+
+                                </p>
                             </td>
                         </tr>
                         <tr>
                             <td [class.mi-estimated]="!carInfoFromObj().engine_capacity">
                                 <p class="mi-cell-label"><i class="bi bi-cpu"></i>سعة المحرك</p>
-                                <p class="mi-cell-value">{{carInfoFromObj().engine_capacity??'غير مقدر'}} لتر</p>
+                                <p class="mi-cell-value">
+                                    @if(carInfoFromObj().estimated_engine_capacity){
+                                        {{carInfoFromObj().engine_capacity}} لتر<span class="estimated">هذه القيمه مقدره</span>
+                                    }@else{
+                                        {{carInfoFromObj().engine_capacity??'غير مقدر'}}لتر
+                                    }
+                                    
+                                    
+                                   </p>
                             </td>
-                            <td></td>
-                            <td></td>
+
                         </tr>
                     </tbody>
                 </table>

@@ -1,0 +1,113 @@
+<div class="panel w-100" dir="rtl">
+
+  <!-- الهيدر + الإحصائيات -->
+  <header class="panel__header">
+    <div class="panel__title-group d-flex justify-content-center align-items-center">
+      <h2 class="panel__title">عمليات الفحص</h2>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="stat__value">{{ totalCount() }}</span>
+        <span class="stat__label">إجمالي</span>
+      </div>
+      <div class="stat stat--success">
+        <span class="stat__value">{{ successCount() }}</span>
+        <span class="stat__label">ناجحة</span>
+      </div>
+      <div class="stat stat--failed">
+        <span class="stat__value">{{ failedCount() }}</span>
+        <span class="stat__label">فاشلة</span>
+      </div>
+      <div class="stat stat--rate">
+        <span class="stat__value">{{ successRate() }}%</span>
+        <span class="stat__label">نسبة النجاح</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- شريط الفلاتر -->
+  <div class="filters">
+
+    <div class="filters__group">
+      <label class="filters__label">النوع</label>
+      <select
+        class="filters__select"
+        [ngModel]="typeFilter()"
+        (ngModelChange)="setTypeFilter($event)"
+      >
+        <option *ngFor="let type of operationTypes()" [value]="type">
+          {{ operationTypeLabel(type) }}
+        </option>
+      </select>
+    </div>
+
+    <div class="filters__pills">
+      <button
+        type="button"
+        class="pill"
+        [class.pill--active]="statusFilter() === 'all'"
+        (click)="setStatusFilter('all')"
+      >الكل</button>
+      <button
+        type="button"
+        class="pill pill--success"
+        [class.pill--active]="statusFilter() === 'success'"
+        (click)="setStatusFilter('success')"
+      >ناجحة</button>
+      <button
+        type="button"
+        class="pill pill--failed"
+        [class.pill--active]="statusFilter() === 'failed'"
+        (click)="setStatusFilter('failed')"
+      >فاشلة</button>
+    </div>
+
+    <button type="button" class="filters__reset" (click)="resetFilters()">
+      مسح الفلاتر
+    </button>
+  </div>
+
+  <!-- الجدول -->
+  <div class="table-wrap">
+    <table class="table" *ngIf="filteredData().length; else emptyState">
+      <thead>
+        <tr>
+          <th class="table__status-col">الحالة</th>
+          <th>التوقيت</th>
+          <th>نوع العملية</th>
+          <th>النتيجة</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let op of filteredData(); trackBy: trackByIndex"
+          class="table__row"
+          [class.table__row--failed]="!op.success"
+        >
+          <td class="table__status-col">
+            <span class="status-bar" [class.status-bar--failed]="!op.success"></span>
+          </td>
+          <td class="table__timestamp">{{ op.timestamp }}</td>
+          <td>
+            <span class="badge">{{ op.operation_type }}</span>
+          </td>
+          <td>
+            <strong class="result" [class.result--success]="op.success" [class.result--failed]="!op.success">
+              <span class="result__dot"></span>
+              {{ op.success ? 'نجحت' : 'فشلت' }}
+            </strong>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ng-template #emptyState>
+      <div class="empty">
+        <p class="empty__title">مفيش نتائج مطابقة</p>
+        <p class="empty__hint">جرّب تغيّر الفلاتر أو تمسحها من فوق.</p>
+      </div>
+    </ng-template>
+  </div>
+
+</div>

@@ -4,6 +4,11 @@
 
 section{
     background: linear-gradient(180deg, var(--blue-50) 0%, var(--white) 62%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .container{
         display: flex;
         justify-content: center;
