@@ -47,6 +47,12 @@ body {
     }
 }
 
+.item {
+    img.loader,img.error {
+        width: 50px;
+    }
+}
+
 @keyframes rotate {
     from {
         transform: rotate(0deg);

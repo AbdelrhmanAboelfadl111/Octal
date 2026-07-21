@@ -23,57 +23,84 @@
                 }
             }
         }
-        ul{
-            @include responsive(350){
-                padding: 0;
-            }
-            @include responsive(1050){
-                padding-right: 30px;
-            }
-            li{
-                position: relative;
-                @include responsive(350) {
-                    margin: 0!important;
-                }
-                &.active{
-                    &::after {
-                        right: 0;
-                        width: 100%;
-                    }
-                }
-                &:after{
-                    content: "";
-                    display: block;
-                    background-color: var(--red-100);
-                    width: 100%;
-                    height: 5px;
-                    position: absolute;
-                    bottom: 0;
-                    right: 50%;
-                    border-radius: 5px;
-                    width: 0%;
-                    transition: all 0.3s ease;
-                }
-                &:hover{
-                    &::after{
-                        right: 0;
-                        width: 100%;
-                    }
-                    
-                }
+        #navbarSupportedContent{
 
-                a{
-                    padding-block: 20px;
-                    font-family: 'Hacen';
-                    font-size: 20px;
-                    font-weight: 700;
-                    @include flexCenter();
+            
+            
+            ul {
+                @include responsive(350) {
+                    padding: 0;
+                    width: 50%;
+                }
+                @include responsive(1050) {
+                    margin-right:10px ;
+                    width: 100%;
+                }
+                @include responsive(1050) {
+                    padding-right: 30px;
+                }
+        
+                li {
+                    position: relative;
+        
+                    @include responsive(350) {
+                        margin: 0 !important;
+                    }
+        
+                    &.active {
+                        &::after {
+                            right: 0;
+                            width: 100%;
+                        }
+                    }
+        
+                    &:after {
+                        content: "";
+                        display: block;
+                        background-color: var(--red-100);
+                        width: 100%;
+                        height: 5px;
+                        position: absolute;
+                        bottom: 0;
+                        right: 50%;
+                        border-radius: 5px;
+                        width: 0%;
+                        transition: all 0.3s ease;
+                    }
+        
+                    &:hover {
+                        &::after {
+                            right: 0;
+                            width: 100%;
+                        }
+        
+                    }
+        
+                    a {
+                        padding-block: 20px;
+                        font-family: 'Hacen';
+                        font-size: 20px;
+                        font-weight: 700;
+                        @include flexCenter();
+                    }
                 }
             }
         }
+       
         .forAdmin{
+            
+            @include responsive(350){
+                width: 100%;
+            }
+            @include responsive(1050){
+                width: fit-content;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
             img{
                 width: 40px;
+                margin: auto;
             }
         }
     }

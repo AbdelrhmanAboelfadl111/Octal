@@ -28,7 +28,7 @@ export class LoginFormComponent {
 
   public getLogs() {
     this.isLoading.set(true);
-    return this.http.get("https://api-car-prediction-main.fastapicloud.dev/logs", { headers: { 'X-API-KEY': this.apiKey } }).subscribe({
+    return this.http.get("https://api-car-prediction-main-a3411d6d.fastapicloud.dev/logs", { headers: { 'X-API-KEY': this.apiKey } }).subscribe({
       next: (res:any) => {
         console.log(res);
         this.isTypedSecretKey.set(true);

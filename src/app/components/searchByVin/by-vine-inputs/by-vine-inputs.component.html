@@ -140,15 +140,21 @@
     </div>
     @if (isLoading()) {
     
-    <p class="alert alert-secondary mt-4 w-50 m-auto text-center">
-        جاري المعالجة، من فضلك انتظر...
-    </p>
+        <div class="item">
+            <p class="alert alert-secondary w-50 m-auto text-capitalize text-center fw-medium mb-0 mt-3">
+                جاري المعالجه من فضلك انتظر ...
+                <img class="loader" src="assets/download.gif" alt="loaders">
+            </p>
+        </div>
     
     } @else if (errorFromApi()) {
     
-    <p class="alert alert-danger mt-4 w-50 m-auto text-center">
-        حدث خطأ، يرجى المحاولة مرة أخرى.
-    </p>
+        <div class="item">
+            <p class="alert alert-danger mt-4 w-50 m-auto text-center">
+                حدث خطأ، يرجى المحاولة مرة أخرى.
+                <img class="error" src="assets/alert.gif" alt="loaders">
+            </p>
+        </div>
     
     } @else if (carDetailsByVinTable()) {
     

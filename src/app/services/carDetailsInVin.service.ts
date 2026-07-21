@@ -12,7 +12,7 @@ export class CarVinDetails {
 
     private http = inject(HttpClient);
 
-    private apiUrl = 'https://api-car-prediction-main.fastapicloud.dev/predict/from-vin';
+    private apiUrl = 'https://api-car-prediction-main-a3411d6d.fastapicloud.dev/predict/from-vin';
 
     sendData(data: any) {
         return this.http.post<PredictionResponse>(this.apiUrl, data);

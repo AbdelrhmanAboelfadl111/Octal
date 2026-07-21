@@ -11,7 +11,7 @@
                 <button type="submit" [class.active]="isTypedSecretKey()" [disabled]="isLoading()">
                 
                     @if (isLoading()) {
-                    جاري معالجة البيانات...
+                        جاري المعالجه من فضلك انتظر ...
                     } @else if (isTypedSecretKey()) {
                     الحصول على البيانات
                     } @else {
@@ -20,7 +20,12 @@
                 
                 </button>
                 @if(isError()){
-                    <p class="alert alert-danger text-center mb-0 mt-2">{{(errorFromXapi)?errorFromXapi:"حدث خطأ يرجى اعادة المحاولة"}}</p>
+                <div class="item w-100">
+                    <p class="alert alert-danger mt-4 m-auto text-center">
+                        حدث خطأ، يرجى المحاولة مرة أخرى.
+                        <img class="error" src="assets/alert.gif" alt="loaders">
+                    </p>
+                </div>
                 }
             </div>
         </form>
