@@ -30,7 +30,7 @@
             ul {
                 @include responsive(350) {
                     padding: 0;
-                    width: 50%;
+                    width: 60%;
                 }
                 @include responsive(1050) {
                     margin-right:10px ;
