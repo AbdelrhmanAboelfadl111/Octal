@@ -15,6 +15,7 @@ export class LoginFormComponent {
   public apiKey = "";
   public errorFromXapi = "";
   public isError = signal(false);
+  public sendRequest = signal<boolean>(false);
   public logsLoaded = output<OperationLog[]>();
   public ChangeActiveInParent=output<boolean>()
   public isLoading = signal(false);
@@ -23,24 +24,27 @@ export class LoginFormComponent {
     this.isTypedSecretKey.set(value.length > 0);
     this.isError.set(false);
     this.isLoading.set(false);
+    this.sendRequest.set(value.length > 0);
     this.errorFromXapi = "";
 }
 
   public getLogs() {
-    this.isLoading.set(true);
-    return this.http.get("https://api-car-prediction-main-a3411d6d.fastapicloud.dev/logs", { headers: { 'X-API-KEY': this.apiKey } }).subscribe({
-      next: (res:any) => {
-        console.log(res);
-        this.isTypedSecretKey.set(true);
-        this.ChangeActiveInParent.emit(this.isTypedSecretKey());
-        this.logsLoaded.emit(res);
-        this.isLoading.set(false);
-    },
-      error: (err) => {
-        this.isError.set(true);
-        this.errorFromXapi = err.error.detail;
-        this.isLoading.set(false);
+    if (this.sendRequest()) {
+          this.isLoading.set(true);
+            this.http.get("https://api-car-prediction-main-a3411d6d.fastapicloud.dev/logs", { headers: { 'X-API-KEY': this.apiKey } }).subscribe({
+              next: (res:any) => {
+                console.log(res);
+                this.isTypedSecretKey.set(true);
+                this.ChangeActiveInParent.emit(this.isTypedSecretKey());
+                this.logsLoaded.emit(res);
+                this.isLoading.set(false);
+            },
+              error: (err) => {
+                this.isError.set(true);
+                this.errorFromXapi = err.error.detail;
+                this.isLoading.set(false);
+            }
+        });;
     }
-  });;
   }
 }
