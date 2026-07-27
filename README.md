@@ -10,7 +10,6 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](#-license)
 
 [Overview](#-overview) •
 [Features](#-features) •
@@ -95,6 +94,8 @@ The app connects to the [Frankfurter API](https://frankfurter.dev/) to fetch the
 | **FastAPI** | API server |
 | **Machine Learning Model** | Linear regression model for price prediction |
 | **X-API-KEY Auth** | Protects admin endpoints |
+
+> 🔗 Backend — separate repository URL: `https://github.com/Eyad-Elghonemy/OCTAL-Model-And-Back-End`
 
 > 🔗 Current API base URL: `https://api-car-prediction-main-a3411d6d.fastapicloud.dev`
 
@@ -218,7 +219,7 @@ Octal was developed as a collaborative, multidisciplinary project, bringing toge
 - Integrated the frontend with the backend and AI-powered services to provide a seamless end-to-end user experience.
 
 
-### Eyad — Backend Developer & AI Engineer
+### Eyad Elghonemy —  Backend Developer & AI Engineer
 - Contributed to the development of the backend architecture and supporting services.
 - Worked on the integration of Artificial Intelligence capabilities into the Octal platform.
 - Developed and integrated AI-powered functionality and model-related services.
@@ -226,7 +227,7 @@ Octal was developed as a collaborative, multidisciplinary project, bringing toge
 - Contributed to data processing and the overall AI pipeline to ensure smooth interaction between the platform's different layers.
 
 
-### Khaled — Data Analyst
+### Khaled Yousry  — Data Analyst
 - Responsible for the data analysis aspects of the Octal project.
 - Analyzed and interpreted project-related datasets to extract meaningful insights.
 - Prepared and processed data to support the project's analytical and AI-related requirements.
@@ -234,18 +235,12 @@ Octal was developed as a collaborative, multidisciplinary project, bringing toge
 - Supported the technical team with data-driven insights that helped improve the project's overall functionality and decision-making process.
 
 
-### Seif — Backend Developer
+### Seif Elden — Backend Developer
 - Developed and maintained the backend infrastructure supporting the Octal platform.
 - Designed and implemented backend APIs required for communication with the Angular frontend.
 - Handled server-side application logic and data processing.
 - Managed the integration between backend services and the application's data sources.
 - Ensured reliable communication between the frontend and backend layers.
-
----
-
-## 📄 License
-
-This project is private — all rights reserved to the Octal team, unless a different license is specified later.
 
 ---
 
